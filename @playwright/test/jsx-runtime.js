@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /**
  * Copyright (c) Microsoft Corporation.
  *
@@ -15,5 +14,29 @@
  * limitations under the License.
  */
 
-const { program } = require('./lib/program');
-program.parse(process.argv);
+function jsx(type, props, key) {
+  return {
+    __pw_type: 'jsx',
+    type,
+    props,
+    key,
+  };
+}
+
+function jsxs(type, props, key) {
+  return {
+    __pw_type: 'jsx',
+    type,
+    props,
+    key,
+  };
+}
+
+// this is used in <></> notation
+const Fragment = { __pw_jsx_fragment: true };
+
+module.exports = {
+  Fragment,
+  jsx,
+  jsxs,
+};

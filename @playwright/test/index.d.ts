@@ -14,5 +14,4 @@
  * limitations under the License.
  */
 
-export * from 'playwright/test';
-export { default } from 'playwright/test';
+export * from 'playwright-core';

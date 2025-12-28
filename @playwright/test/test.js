@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 /**
  * Copyright (c) Microsoft Corporation.
  *
@@ -15,5 +14,11 @@
  * limitations under the License.
  */
 
-const { program } = require('./lib/program');
-program.parse(process.argv);
+const pwt = require('./lib/index');
+const playwright = require('./index');
+const combinedExports = {
+  ...playwright,
+  ...pwt,
+};
+
+module.exports = Object.assign(combinedExports.test, combinedExports);
