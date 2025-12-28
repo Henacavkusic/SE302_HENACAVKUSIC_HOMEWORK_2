@@ -1,0 +1,126 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Sweet Shop" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Sweets" [ref=e8] [cursor=pointer]:
+            - /url: /sweets
+        - listitem [ref=e9]:
+          - link "About" [ref=e10] [cursor=pointer]:
+            - /url: bout
+        - listitem [ref=e11]:
+          - link "Login" [ref=e12] [cursor=pointer]:
+            - /url: /login
+        - listitem [ref=e13]:
+          - link "0 Basket" [ref=e14] [cursor=pointer]:
+            - /url: /basket
+            - generic [ref=e15]: "0"
+            - text: Basket
+          - generic [ref=e16]: (current)
+  - generic [ref=e17]:
+    - banner [ref=e18]:
+      - heading "Your Basket" [level=1] [ref=e19]
+      - paragraph [ref=e20]: Please check your order details and then enter your payment and delivery details.
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - heading "Your Basket 0" [level=4] [ref=e23]:
+          - generic [ref=e24]: Your Basket
+          - generic [ref=e25]: "0"
+        - list [ref=e26]:
+          - listitem [ref=e27]:
+            - generic [ref=e28]: Total (GBP)
+            - strong [ref=e29]: £0.00
+        - heading "Delivery" [level=4] [ref=e30]
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - radio "Collect (FREE)" [checked] [ref=e33]
+            - generic [ref=e34]: Collect (FREE)
+          - generic [ref=e35]:
+            - radio "Standard Shipping (£1.99)" [ref=e36]
+            - generic [ref=e37]: Standard Shipping (£1.99)
+        - separator [ref=e38]
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - textbox "Promo code" [ref=e41]: "@@@@"
+            - button "Redeem" [ref=e43] [cursor=pointer]
+          - link "Empty Basket" [ref=e45] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e46]:
+        - heading "Billing address" [level=4] [ref=e47]
+        - generic [ref=e48]:
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - generic [ref=e51]: First name
+              - textbox [ref=e52]: weeqweqe
+            - generic [ref=e53]:
+              - generic [ref=e54]: Last name
+              - textbox [ref=e55]: eqeqe
+          - generic [ref=e56]:
+            - generic [ref=e57]: Email
+            - textbox "Email" [ref=e58]:
+              - /placeholder: you@example.com
+              - text: qeqeqeqe
+            - generic [ref=e59]: Please enter a valid email address for shipping updates.
+          - generic [ref=e60]:
+            - generic [ref=e61]: Address
+            - textbox "Address" [ref=e62]:
+              - /placeholder: 1234 Main St
+            - generic [ref=e63]: Please enter your shipping address.
+          - generic [ref=e64]:
+            - generic [ref=e65]: Address 2 (Optional)
+            - textbox "Address 2 (Optional)" [ref=e66]:
+              - /placeholder: Apartment or suite
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - generic [ref=e69]: Country
+              - combobox "Country" [ref=e70]:
+                - option "Choose..." [selected]
+                - option "United Kingdom"
+              - generic [ref=e71]: Please select a valid country.
+            - generic [ref=e72]:
+              - generic [ref=e73]: City
+              - combobox [ref=e74]:
+                - option "Choose..." [selected]
+                - option "Bristol"
+                - option "Cardiff"
+                - option "Swansea"
+              - generic [ref=e75]: Please provide a valid state.
+            - generic [ref=e76]:
+              - generic [ref=e77]: Zip
+              - textbox "Zip" [ref=e78]:
+                - /placeholder: ""
+              - generic [ref=e79]: Zip code required.
+          - separator [ref=e80]
+          - heading "Payment" [level=4] [ref=e81]
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - generic [ref=e84]: Name on card
+              - textbox "Name on card" [ref=e85]:
+                - /placeholder: ""
+                - text: eee
+              - text: Full name as displayed on card
+            - generic [ref=e86]:
+              - generic [ref=e87]: Credit card number
+              - textbox "Credit card number" [ref=e88]:
+                - /placeholder: ""
+              - generic [ref=e89]: Credit card number is required
+          - generic [ref=e90]:
+            - generic [ref=e91]:
+              - generic [ref=e92]: Expiration
+              - textbox "Expiration CVV" [ref=e93]:
+                - /placeholder: ""
+                - text: qqq
+            - generic [ref=e94]:
+              - generic [ref=e95]: CVV
+              - spinbutton [ref=e96]
+              - generic [ref=e97]: Security code required
+          - separator [ref=e98]
+          - button "Continue to checkout" [active] [ref=e99] [cursor=pointer]
+  - contentinfo [ref=e100]:
+    - paragraph [ref=e102]: Sweet Shop Project 2018
+```
